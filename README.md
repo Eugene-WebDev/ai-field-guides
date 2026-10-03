@@ -5,7 +5,7 @@ Plain-English guides to the AI tools I use every day: what each product is for, 
 | Guide | Covers | Checked |
 |---|---|---|
 | [Claude](claude/README.md) | Claude Code (modes, CLAUDE.md, skills, hooks, subagents, automation), Artifacts & Design, memory & backups, Cowork, Claude in Chrome, data use by plan | 3 Oct 2026 |
-| OpenAI Codex | *in progress* | |
+| [OpenAI Codex](openai-codex/README.md) | CLI / IDE / desktop / cloud, sandbox & approvals, AGENTS.md, skills, MCP, subagents, Codex Cloud, plans & models, data use by plan, Codex vs Claude Code | 3 Oct 2026 |
 | DeepSeek | *in progress* — incl. keeping sensitive data out of China-hosted services | |
 
 Related: [ai-engineering-toolkit](https://github.com/Eugene-WebDev/ai-engineering-toolkit) · [ai-security-toolkit](https://github.com/Eugene-WebDev/ai-security-toolkit) · [cicd-toolkit](https://github.com/Eugene-WebDev/cicd-toolkit)
