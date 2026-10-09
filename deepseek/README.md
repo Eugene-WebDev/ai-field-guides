@@ -20,7 +20,7 @@
 
 ## The 30-second version
 
-> 🛑 **Never send client data, personal data, credentials, NDA code or anything you'd mind a foreign government reading to DeepSeek's own app or API.** That data is stored in China, can be used for training by default, and EU regulators have already ruled the transfers unlawful.
+> 🛑 **Never send personal data, credentials, sensitive code or anything you'd mind a foreign government reading to DeepSeek's own app or API.** That data is stored in China, can be used for training by default, and EU regulators have already ruled the transfers unlawful.
 >
 > ✅ **You can still use the model.** DeepSeek's models are open weights (MIT licence). Run them **on your own hardware** or through an **EU-hosted provider** (for example Microsoft Foundry in Poland Central or West Europe). Then your data never touches DeepSeek's servers.
 
@@ -136,7 +136,7 @@ flowchart LR
 ```
 
 Rules:
-- **Client or NDA repos:** never point an agent at `api.deepseek.com`.
+- **Sensitive repos:** never point an agent at `api.deepseek.com`.
 - **Check your environment** for redirected base URLs before starting an agent on a sensitive repo:
   ```bash
   env | grep -iE 'ANTHROPIC_BASE_URL|OPENAI_BASE_URL|OPENAI_API_BASE|deepseek'
@@ -162,7 +162,7 @@ Even when hosted safely, keep these in mind (NIST's Center for AI Standards and 
 | Question | If yes |
 |---|---|
 | Does the input contain personal data (names, emails, customer records)? | Local or EU-hosted only. Never DeepSeek's API or app. |
-| Is it client code, NDA material or credentials? | Local or EU-hosted only, and mask secrets first. |
+| Is it sensitive code, private material or credentials? | Local or EU-hosted only, and mask secrets first. |
 | Is it an agent with tools (email, files, web, payments)? | Prefer a model with stronger injection resistance; if DeepSeek, lock tools down and require approvals. |
 | Is the content politically or historically sensitive? | Don't rely on DeepSeek's answers. |
 | Is it public text and you just want cheap tokens? | DeepSeek's API is OK. Opt out of training, use a throwaway account. |

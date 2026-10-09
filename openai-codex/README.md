@@ -326,7 +326,7 @@ flowchart TD
 - **Feedback** (thumbs, `/feedback` with logs) shares that conversation with OpenAI. Don't send it on client work.
 
 **So what should you do?**
-1. Client or NDA code: use a **Business/Enterprise** workspace or an **API key**, not a personal plan. If you must use a personal plan, switch training **off**.
+1. Sensitive code: use a **Business/Enterprise** workspace or an **API key**, not a personal plan. If you must use a personal plan, switch training **off**.
 2. Keep secrets out of prompts and repos you hand to Codex. Use network secrets in cloud environments, never plain env vars in code.
 3. Turn off local history on shared machines (`history.persistence = "none"`).
 4. For GDPR: OpenAI offers a DPA for business plans and the API. List it as a processor (US) in your privacy notice; Enterprise/Edu can choose data residency.

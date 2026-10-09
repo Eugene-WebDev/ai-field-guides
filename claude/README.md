@@ -339,7 +339,7 @@ rsync -a --include='*/' --include='memory/***' --exclude='*' ~/.claude/projects/
 gitleaks detect --no-git --source . && git add -A && git commit -m "backup $(date +%F)" && git push
 ```
 
-> 🛑 **Watch out:** memory notes often contain client names, project details or private info. If any of it is under NDA, it shouldn't sit on GitHub, even in a private repo. Use an encrypted backup instead (an encrypted disk image, or `restic` to your own storage). Transcripts can hold API keys you pasted: exclude them.
+> 🛑 **Watch out:** memory notes can contain private details. Keep them in an encrypted backup (an encrypted disk image, or `restic` to your own storage). Transcripts can hold API keys you pasted: exclude them.
 
 Transcript retention is the `cleanupPeriodDays` setting (30 by default). Desktop and Cowork transcripts are exempt from that cleanup by default.
 
@@ -448,7 +448,7 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
 ### So what should you do?
 
-1. **Client or NDA work on a personal plan?** Switch training **off**, or better, use a Team/API account for client work. Business terms are the safe default.
+1. **Sensitive work on a personal plan?** Switch training **off**, or better, use a Team/API account for it. Business terms are the safe default.
 2. **Something very private?** Use incognito chat.
 3. **Don't press thumbs up/down or `/feedback`** on a conversation that contains client data. That copy is kept 5 years.
 4. **Never paste secrets** (API keys, passwords) into any chat. They end up in transcripts on your disk and on the server.
